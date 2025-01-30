@@ -1,5 +1,5 @@
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const markdownString = `
 # GFM
@@ -22,6 +22,12 @@ A note[^1]
 
 ## Table
 
+\`\`\`Kotlin
+fun main() {
+  println("Hello, World!")
+}
+\`\`\`
+
 | a | b  |  c |  d  |
 | - | :- | -: | :-: |
 
@@ -33,8 +39,13 @@ A note[^1]
 
 export default function Home() {
   return (
-    <div className="p-8">
-      <ReactMarkdown remarkPlugins={[remarkGfm]} className="markdown">{markdownString}</ReactMarkdown>
+    <div className="p-16">
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        className="markdown"
+      >
+        {markdownString}
+      </ReactMarkdown>
     </div>
   );
 }
