@@ -13,13 +13,12 @@ export const GalleryCard = () => {
   }, []);
 
   return (
-    <div className="relative w-[200px] h-[200px]">
+    <div className="relative aspect-square">
       {loading || (
         <Image
           src={imageUrl}
           alt="Gallery Image"
           fill
-          sizes="(max-width: 768px) 100vw, 200px"
           style={{ objectFit: "cover" }}
           priority={true}
           className="rounded-2xl"

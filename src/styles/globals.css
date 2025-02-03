@@ -5,14 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
 
 :root {
-  --background: #fbeaec;
-  --foreground: #171717;
+  --background: #f9faef;
+  --foreground: #1a1c16;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #fbeaec;
-    --foreground: #22191b;
+    --background: #191113;
+    --foreground: #efdee0;
   }
 }
 
@@ -23,7 +23,8 @@ body {
 }
 
 .markdown {
-  @apply text-[#22191b] leading-normal break-words;
+  color: var(--foreground);
+  @apply leading-normal break-words;
 }
 
 .markdown > * + * {

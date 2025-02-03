@@ -1,10 +1,11 @@
 import ReactMarkdown from "react-markdown";
 import { GalleryCard } from "../ui/GalleryCard";
 import remarkGfm from "remark-gfm";
+import { Card } from "../ui/Card";
 
 export const GalleryView = () => {
   return (
-    <div className="rounded-3xl bg-[#fff8f7] p-8">
+    <Card>
       <ReactMarkdown remarkPlugins={[remarkGfm]} className="markdown">
         {"## Gallery"}
       </ReactMarkdown>
@@ -18,6 +19,6 @@ export const GalleryView = () => {
         <GalleryCard />
         <GalleryCard />
       </div>
-    </div>
+    </Card>
   );
 };
