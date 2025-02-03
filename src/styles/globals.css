@@ -9,12 +9,12 @@
   --foreground: #1a1c16;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #191113;
     --foreground: #efdee0;
   }
-}
+} */
 
 body {
   color: var(--foreground);

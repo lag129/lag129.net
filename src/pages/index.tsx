@@ -5,16 +5,17 @@ import { ProfileView } from "@/components/layouts/ProfileView";
 
 export default function Home() {
   return (
-    <div className="flex flex-wrap">
-      <aside className="w-1/4 p-8">
+    <div className="flex flex-col xl:flex-row min-h-screen">
+      <aside className="w-full xl:w-1/4 p-8 xl:p-10">
         <ProfileView />
-        <div className="pt-8"></div>
-        <Footer />
       </aside>
-      <div className="w-3/4 pt-8 pr-8">
+      <main className="w-full xl:w-3/4 pr-8 pb-8 pl-8 xl:pt-10 xl:pr-10">
         <Header />
         <GalleryView />
-      </div>
+        <div className="pt-8">
+          <Footer />
+        </div>
+      </main>
     </div>
   );
 }
