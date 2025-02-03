@@ -9,13 +9,9 @@ export const ProfileView = () => {
         <Image src="/img/profile.jpg" alt="Profile Image" width={500} height={500} className="rounded-full" />
       </div>
       <div className="mb-4 mt-6 block border-b pb-2 text-4xl font-semibold leading-tight">lag129</div>
-      <div className="pb-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-1 xl:gap-4">
         <LinkButton imgUrl="/github.svg" serviceName="GitHub" userId="lag129" href="https://github.com/lag129" />
-      </div>
-      <div className="pb-4">
         <LinkButton imgUrl="/x.png" serviceName="Twitter" userId="@lag_129" href="https://twitter.com/lag_129" />
-      </div>
-      <div>
         <LinkButton imgUrl="/mastodon.svg" serviceName="Mastodon" userId="@lag129" href="https://fedibird.com/@lag129" />
       </div>
     </Card>
