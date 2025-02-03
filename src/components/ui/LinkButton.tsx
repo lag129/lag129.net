@@ -16,7 +16,7 @@ export const LinkButton = ({ imgUrl, serviceName, userId, href }: LinkButtonProp
           <Image src={imgUrl} alt="Service Image" width={50} height={50} className="pl-4"/>
           <div>
             <div className="font-bold">{serviceName}</div>
-            <div className="text-sm text-[#75796c]">{userId}</div>
+            <div className="text-sm font-medium text-[#75796c]">{userId}</div>
           </div>
         </div>
       </a>
