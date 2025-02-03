@@ -10,14 +10,12 @@ export const GalleryView = () => {
         {"## Gallery"}
       </ReactMarkdown>
       <div className="grid grid-cols-4 gap-2">
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
-        <GalleryCard />
+        <GalleryCard imgUrl="/img/IMG_7509.webp" />
+        <GalleryCard imgUrl="/img/IMG_7512.webp" />
+        <GalleryCard imgUrl="/img/IMG_7530.webp" />
+        <GalleryCard imgUrl="/img/IMG_7690.webp" />
+        <GalleryCard imgUrl="/img/IMG_7724.webp" />
+        <GalleryCard imgUrl="/img/IMG_7744.webp" />
       </div>
     </Card>
   );
