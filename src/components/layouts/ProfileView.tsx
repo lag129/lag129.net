@@ -10,13 +10,13 @@ export const ProfileView = () => {
       </div>
       <div className="mb-4 mt-6 block border-b pb-2 text-4xl font-semibold leading-tight">lag129</div>
       <div className="pb-4">
-        <LinkButton serviceName="GitHub" userId="lag129" href="https://github.com/lag129" />
+        <LinkButton imgUrl="/github.svg" serviceName="GitHub" userId="lag129" href="https://github.com/lag129" />
       </div>
       <div className="pb-4">
-        <LinkButton serviceName="Twitter" userId="@lag_129" href="https://twitter.com/lag_129" />
+        <LinkButton imgUrl="/x.svg" serviceName="Twitter" userId="@lag_129" href="https://twitter.com/lag_129" />
       </div>
       <div>
-        <LinkButton serviceName="Mastodon" userId="@lag129" href="https://fedibird.com/@lag129" />
+        <LinkButton imgUrl="/mastodon.svg" serviceName="Mastodon" userId="@lag129" href="https://fedibird.com/@lag129" />
       </div>
     </Card>
   );
