@@ -4,7 +4,7 @@ import { ProfileView } from "@/components/layouts/ProfileView";
 
 export default function Home() {
   return (
-    <div className="flex flex-col p-8 lg:flex-row">
+    <div className="flex flex-col p-8 lg:flex-row lg:p-12">
       <aside className="pb-8 lg:w-1/4">
         <ProfileView />
       </aside>
