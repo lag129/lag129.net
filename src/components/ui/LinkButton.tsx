@@ -8,7 +8,7 @@ interface LinkButtonProps {
 
 export const LinkButton = ({serviceName, userId, href }: LinkButtonProps) => {
   return (
-    <div className="rounded-3xl bg-[#dce7c8]">
+    <div className="rounded-3xl bg-[#dce7c8] ring-1 ring-[#dadbd0]">
       <a href={href} className="block p-2">
         <div className="flex items-center gap-5">
           <div className="pl-3">
