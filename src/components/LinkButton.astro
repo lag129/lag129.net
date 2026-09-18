@@ -1,0 +1,20 @@
+---
+interface Props {
+    serviceName: string;
+    userId: string;
+    href: string;
+}
+
+const { serviceName, userId, href } = Astro.props;
+---
+
+<div class="rounded-3xl bg-[#dce7c8] ring-1 ring-[#dadbd0]">
+    <a href={href} class="block p-2">
+        <div class="flex items-center gap-5">
+            <div class="pl-3">
+                <div class="font-bold">{serviceName}</div>
+                <div class="text-sm font-medium text-[#75796c]">{userId}</div>
+            </div>
+        </div>
+    </a>
+</div>

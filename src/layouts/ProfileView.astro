@@ -1,0 +1,41 @@
+---
+import Card from "@/components/Card.astro";
+import LinkButton from "@/components/LinkButton.astro";
+---
+
+<Card>
+    <div class="size-48">
+        <img
+            src="/img/profile.jpg"
+            alt="Profile Image"
+            width="500"
+            height="500"
+            class="rounded-full"
+        />
+    </div>
+    <div class="mb-4 mt-6 block border-b pb-2 text-4xl font-semibold leading-tight">
+        lag129
+    </div>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-1 lg:gap-4">
+        <LinkButton
+            serviceName="GitHub"
+            userId="lag129"
+            href="https://github.com/lag129"
+        />
+        <LinkButton
+            serviceName="Blog"
+            userId="blog.lag129.net"
+            href="https://blog.lag129.net"
+        />
+        <LinkButton
+            serviceName="Misskey"
+            userId="@lag129"
+            href="https://misskey.lag129.net/@lag129"
+        />
+        <LinkButton
+            serviceName="X (Twitter)"
+            userId="@lag_129"
+            href="https://x.com/lag_129"
+        />
+    </div>
+</Card>
