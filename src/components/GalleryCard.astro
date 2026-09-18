@@ -1,0 +1,15 @@
+---
+interface Props {
+    imgUrl: string;
+}
+
+const { imgUrl } = Astro.props;
+---
+
+<div class="relative aspect-square">
+    <img
+        src={imgUrl}
+        alt="Gallery Image"
+        class="absolute inset-0 h-full w-full rounded-3xl object-cover"
+    />
+</div>
